@@ -10,6 +10,9 @@ tests:
 	$(MAKE) -C test-inline-tests/with-oasis-method2 test
 	$(MAKE) -C test-toplevel-expect-tests test
 
+install: $(NAME).install
+	opam-installer -i --prefix "$(PREFIX)" $(NAME).install
+
 bin.lzo: $(NAME).install
 	rm -rf _install
 	mkdir _install
