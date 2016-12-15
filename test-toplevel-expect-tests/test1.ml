@@ -3,7 +3,7 @@
 #require "ppx_jane"
 open Core.Std;;
 
-[%sexp { x = 1; y = [ABC] }];
+([%sexp { x = 1; y = [ABC] }] : Sexp.t);
 [%%expect{|
 - : Sexp.t = ((x 1) (y (ABC)))
 |}]
