@@ -3,6 +3,6 @@
 <src/*.ml{,i}>: ppx-driver(ppx_inline_test+ppx_expect -inline-test-lib blah)
 # Force all modules to be linked, this is necessary as the tests
 # runner uses nothing itself
-<test-runner/*>: linkall
+<test-runner/*>: linkall, custom
 # OASIS_START
 # OASIS_STOP

@@ -17,7 +17,7 @@ Library blah
 Executable test_runner
   Path:         test-runner
   MainIs:       test_runner.ml
-  BuildDepends: blah, ppx_expect.evaluator
+  BuildDepends: blah, ppx_expect.evaluator, ppx_inline_test.runner.lib
 
 # We use a -diff-cmd only to make the output deterministic, you don't
 # need to do that in a real project
