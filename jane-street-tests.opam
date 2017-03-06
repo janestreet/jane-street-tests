@@ -10,10 +10,11 @@ build: [
 ]
 depends: [
   "core"
-  "jbuilder"
+  "jbuilder"                {build}
   "ppx_driver"
   "ppx_jane"
   "toplevel_expect_test"
+  "ocaml-migrate-parsetree"
   "ocamlbuild"
 ]
 available: [ ocaml-version >= "4.03.0" ]
