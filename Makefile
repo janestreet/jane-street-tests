@@ -7,7 +7,6 @@ defaullt: tests
 .PHONY: default
 tests:
 	$(MAKE) -C test-inline-tests/with-oasis-method1 test
-	$(MAKE) -C test-inline-tests/with-oasis-method2 test
 	$(MAKE) -C test-toplevel-expect-tests test
 
 install: $(NAME).install

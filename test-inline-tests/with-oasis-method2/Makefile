@@ -1,1 +1,0 @@
-include ../../makefiles/Makefile.simple
